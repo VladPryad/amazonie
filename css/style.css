@@ -95,7 +95,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    z-index: 3;
+    z-index: 7;
 }
 .sidebar_content .hmenu-customer-profile .avatar_icon {
     margin: 0 10px 0 36px;
@@ -199,7 +199,7 @@
     right: -100%;
     position: relative;
     overflow-x: hidden;
-    display: inline;
+    display: none;
     transition: right .4s ease;
     padding: 70px 0 25px 0;
 }
@@ -235,10 +235,10 @@
 }
 
 
-.submenu .hmenu-content li.help-settings {
-    padding: 13px 20px 13px 36px;
+.submenu .hmenu-content li.help-settings:first-child {
     color: #969397;
     font-size: 14px;
+    padding: 5px 20px 13px 36px;
 }
 .submenu .hmenu-translateX-right li.line {
     border-bottom: 1px solid #d5dbdb;

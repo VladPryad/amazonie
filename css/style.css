@@ -202,7 +202,7 @@
     visibility: hidden;
 }
 
-.sidebar_content .hmenu-translateX-right {
+/* .sidebar_content .hmenu-translateX-right {
     position: relative;
     overflow-x: hidden;
     padding: 70px 0 25px 0;
@@ -218,4 +218,4 @@
 .sidebar_content .hmenu-translateX-right li a:hover,
 .sidebar_content .hmenu-translateX-right li a:visited{
     background-color: #eaeded;
-}
+} */

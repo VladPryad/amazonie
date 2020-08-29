@@ -178,7 +178,6 @@
 .submenu {
     position: absolute;
     top: 0;
-    margin-top: 50px;
     left: 0;
     width: 365px;
     display: flex;
@@ -235,13 +234,29 @@
 }
 
 
-.submenu .hmenu-content li.help-settings:first-child {
+.submenu  li.help-settings {
     color: #969397;
+    text-transform: uppercase;
     font-size: 14px;
+    margin-top: 10px;
     padding: 5px 20px 13px 36px;
 }
 .submenu .hmenu-translateX-right li.line {
     border-bottom: 1px solid #d5dbdb;
     padding: 2px 0 0 0;
     margin: 0;
+}
+
+.hmenu-back-button {
+    border-bottom:1px solid #d5dbdb;
+    text-transform:uppercase;
+    font-weight:600;
+}
+
+.hmenu-arrow-prev {
+    margin-left: auto;
+    width: 10px;
+    height: 14px;
+    background-position: -284px -153px;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468670774_.png);
 }

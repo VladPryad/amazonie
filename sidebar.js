@@ -14,13 +14,6 @@ burgerMenu.onclick = function(event) {
 const subcategories = document.querySelectorAll('.hmenu-translateX-right');
 let currentSubcategory;
 
-const back = document.querySelectorAll('hmenu-back-button');
-back.forEach(item => {
-    item.addEventListener('click', (event) => {
-    currentSubcategory.classList.remove('open')
-    })
-})
-
 const aHref = document.querySelectorAll('.hmenu-content a');
     aHref.forEach(item => {
         item.addEventListener('click', (event) => {
@@ -29,7 +22,19 @@ const aHref = document.querySelectorAll('.hmenu-content a');
             submenu.classList.add('open');
             currentSubcategory.classList.add('open')
             currentSubcategory.style.display = 'inline';
+            sidebarContent.style.overflow = 'hidden';
             menu.style.display = 'none';
+        })
+    })
+
+    const back = document.querySelectorAll('.hmenu-back-button');
+    back.forEach(item => {
+        item.addEventListener('click', (event) => {
+            submenu.classList.remove('open');
+            currentSubcategory.classList.remove('open');
+            currentSubcategory.style.display = 'none';
+            menu.style.display = 'block';
+        sidebarContent.style.overflow = 'auto';
         })
     })
 
@@ -41,4 +46,5 @@ const aHref = document.querySelectorAll('.hmenu-content a');
         submenu.classList.remove('open')
         currentSubcategory.style.display = 'none';
         menu.style.display = 'block';
+        sidebarContent.style.overflow = 'auto';
     }

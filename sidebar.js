@@ -17,13 +17,18 @@ let currentSubcategory;
 const aHref = document.querySelectorAll('.hmenu-content a');
     aHref.forEach(item => {
         item.addEventListener('click', (event) => {
+            try {
             currentSubcategory = subcategories[item.id-1];
 
-            submenu.classList.add('open');
-            currentSubcategory.classList.add('open')
             currentSubcategory.style.display = 'inline';
+            submenu.classList.add('open');              
+            window.setTimeout(function() {currentSubcategory.classList.add('open')},50);
             sidebarContent.style.overflow = 'hidden';
             menu.style.display = 'none';
+            }
+            catch(ex) {
+                console.log('this category isn\'t working yet ');
+            }
         })
     })
 

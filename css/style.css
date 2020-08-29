@@ -199,25 +199,12 @@
     position: relative;
     overflow-x: hidden;
     display: none;
-    transition: right .4s ease;
+    transition: all .4s ease;
     padding: 70px 0 25px 0;
 }
 
-/* .submenu .hmenu-translateX-right .chosen {
-    top: 0;
-    right: -100%;
-    position: relative;
-    overflow-x: hidden;
-    display: inline;
-    transition: right .4s ease;
-    padding: 70px 0 25px 0;
-} */
-
 .submenu .hmenu-translateX-right.open {
-    position: relative;
-    overflow-x: hidden; 
     right: 0;
-    padding: 70px 0 25px 0;
 }
 
  .submenu .hmenu-translateX-right li a{
@@ -254,9 +241,13 @@
 }
 
 .hmenu-arrow-prev {
-    margin-left: auto;
-    width: 10px;
-    height: 14px;
-    background-position: -284px -153px;
-    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468670774_.png);
+    display: none;
+    position:relative;
+    top:15px;
+    left:24px;
+    background:url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468670774_.png);
+    background-position: -155px -305px;
+    /* display:inline-block; */
+    width:50px;
+    height:25px; /*14*/
 }

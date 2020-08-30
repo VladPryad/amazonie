@@ -10,7 +10,7 @@ burgerMenu.onclick = function(event) {
     sidebarContent.classList.add('open')
     event.target.classList.add('hide')
 }
-  
+
 const subcategories = document.querySelectorAll('.hmenu-translateX-right');
 let currentSubcategory;
 
@@ -21,8 +21,11 @@ const aHref = document.querySelectorAll('.hmenu-content a');
             currentSubcategory = subcategories[item.id-1];
 
             currentSubcategory.style.display = 'inline';
+
             submenu.classList.add('open');              
-            window.setTimeout(function() {currentSubcategory.classList.add('open')},50);
+            window.setTimeout(function() {               
+                currentSubcategory.classList.add('open')
+            },50);
             sidebarContent.style.overflow = 'hidden';
             menu.style.display = 'none';
             }
@@ -36,8 +39,14 @@ const aHref = document.querySelectorAll('.hmenu-content a');
     back.forEach(item => {
         item.addEventListener('click', (event) => {
             submenu.classList.remove('open');
+            window.setTimeout(function() {               
+            currentSubcategory.style.display = 'none';    
+                
+            },400);
+            
             currentSubcategory.classList.remove('open');
-            currentSubcategory.style.display = 'none';
+            
+
             menu.style.display = 'block';
         sidebarContent.style.overflow = 'auto';
         })
@@ -49,7 +58,9 @@ const aHref = document.querySelectorAll('.hmenu-content a');
         burgerMenu.classList.remove('hide')
         currentSubcategory.classList.remove('open')
         submenu.classList.remove('open')
+
         currentSubcategory.style.display = 'none';
-        menu.style.display = 'block';
+
+        //menu.style.display = 'block';
         sidebarContent.style.overflow = 'auto';
     }

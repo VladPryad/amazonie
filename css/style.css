@@ -211,6 +211,10 @@
     right: 0;
 }
 
+.submenu .hmenu-translateX-right.hide {
+    right: -100%;
+}
+
  .submenu .hmenu-translateX-right li a{
     text-decoration: none;
     color: #000;

@@ -41,13 +41,9 @@ const aHref = document.querySelectorAll('.hmenu-content a');
             submenu.classList.remove('open');
             window.setTimeout(function() {               
             currentSubcategory.style.display = 'none';    
-                
-            },400);
-            
-            currentSubcategory.classList.remove('open');
-            
-
-            menu.style.display = 'block';
+            menu.style.display = 'block';            
+            },150);           
+        currentSubcategory.classList.remove('open');           
         sidebarContent.style.overflow = 'auto';
         })
     })

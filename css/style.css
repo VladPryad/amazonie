@@ -143,9 +143,6 @@
     background-position: -166px -288px;
     background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468670774_.png);
 }
-/* .sidebar_content .hmenu-content li a i.arrow_icon:hover{
-    color: #fff;
-} */
 .sidebar_content .hmenu-content li a i.language_icon{
     background-position: -77px -51px;
     width: 15px;
@@ -186,7 +183,7 @@
     flex-direction: column;
     z-index: 6;
     visibility: hidden;
-    background-color: #fff;
+    background-color: transparent ;  
     height: 100%;
     box-shadow: 4px 0 10px 0 rgba(0,0,0,.4);
     font-family: 'Amazon Ember', Arial, sans-serif;
@@ -263,5 +260,12 @@
     overflow-x: hidden;
     overflow-y: scroll ;
     margin-top: 50px;
+    top: 0px;
+    right: 0;
+    transition: all .4s ease;
+    position: relative;
+}
+.under-sign-in.hide {
+    right: 100%;
 }
 

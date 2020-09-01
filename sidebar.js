@@ -24,11 +24,12 @@ const aHref = document.querySelectorAll('.hmenu-content a');
 
             currentSubcategory.style.display = 'inline';
 
-            submenu.classList.add('open');              
+            submenu.classList.add('open');  
+            sidebarContent.style.overflow = 'hidden';            
             window.setTimeout(function() {               
                 currentSubcategory.classList.add('open');
             },50);
-            sidebarContent.style.overflow = 'hidden';
+            
             }
             catch(ex) {
                 console.log('this category isn\'t working yet ');
